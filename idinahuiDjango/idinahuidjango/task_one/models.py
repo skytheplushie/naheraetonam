@@ -21,4 +21,12 @@ class Game(models.Model):
     def __str__(self):
         return self.title
 
+
+class News(models.Model):
+    title = models.CharField()
+    content = models.TextField()
+    date = models.IntegerField()
+
+    def __str__(self):
+        return self.title
 # Create your models here.

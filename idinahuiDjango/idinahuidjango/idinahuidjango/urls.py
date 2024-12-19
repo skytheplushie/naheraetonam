@@ -23,5 +23,6 @@ urlpatterns = [
     path('platform/', shop_view),
     path('platform/cart/', cart_view),
     path('platform/games/', game_view),
-    path('platform/registration_view', sign_up)
+    path('platform/registration_view/', sign_up),
+    path('platform/news/', news_view)
 ]

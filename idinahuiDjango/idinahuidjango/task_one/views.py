@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.core.paginator import Paginator
 from models import *
 
 
@@ -24,13 +25,17 @@ def sign_up(request):
 
 
 def shop_view(request):
-    return render(request, 'templates/menu.html.html')
+    return render(request, 'templates/menu.html')
 
 
 def cart_view(request):
-    return render(request, 'templates/cart.html.html')
+    return render(request, 'templates/cart.html')
 
 
 def game_view(request):
-    return render(request, 'templates/games.html.html')
+    return render(request, 'templates/games.html')
+
+
+def news_view(request):
+    return render(request, 'templates/news.html', context='news')
 # Create your views here.
