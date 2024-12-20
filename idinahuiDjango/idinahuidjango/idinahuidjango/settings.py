@@ -74,11 +74,11 @@ WSGI_APPLICATION = 'idinahuidjango.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'blyawhythis',
+        'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'ltym1200',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
 
