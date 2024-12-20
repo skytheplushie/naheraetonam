@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.core.paginator import Paginator
-from models import *
+from task_one.models import *
 
 
 def sign_up(request):
